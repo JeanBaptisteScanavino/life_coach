@@ -14,3 +14,6 @@ class Skill(BaseModel):
     category_id: int
     month_id: int
     status: SkillStatus
+
+    class Config:
+        orm_mode = True

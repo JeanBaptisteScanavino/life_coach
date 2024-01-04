@@ -1,4 +1,4 @@
-from core.models.Month import Month
+from core.schemas.Month import Month
 from fastapi import APIRouter
 
 month_router = APIRouter(

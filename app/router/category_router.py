@@ -1,4 +1,4 @@
-from core.models.Category import Category
+from core.schemas.Category import Category
 from database.database import get_db
 from fastapi import APIRouter, Depends
 from sqlalchemy.orm import Session

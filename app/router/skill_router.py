@@ -1,4 +1,4 @@
-from core.models.Skill import Skill, SkillStatus
+from core.schemas.Skill import Skill, SkillStatus
 from fastapi import APIRouter
 
 skill_router = APIRouter(
