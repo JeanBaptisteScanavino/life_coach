@@ -1,5 +1,6 @@
-from core.schemas.Month import Month
 from fastapi import APIRouter
+
+from core.schemas.Month import MonthSchema
 
 month_router = APIRouter(
     prefix="/month",

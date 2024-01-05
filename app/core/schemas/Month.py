@@ -1,7 +1,7 @@
 from pydantic import BaseModel
 
 
-class Month(BaseModel):
+class MonthSchema(BaseModel):
     year: int
     active: bool
 

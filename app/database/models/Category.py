@@ -1,5 +1,6 @@
-from database.database import Base
 from sqlalchemy import Boolean, Column, Integer, String
+
+from database.database import Base
 
 
 class Category(Base):

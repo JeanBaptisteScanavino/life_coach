@@ -1,9 +1,6 @@
 from pydantic import BaseModel
 
 
-class Category(BaseModel):
+class CategorySchema(BaseModel):
     title: str
     active: bool
-    
-    class Config:
-        orm_mode = True

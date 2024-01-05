@@ -1,5 +1,6 @@
-from core.schemas.WaintingList import WaitingList
 from fastapi import APIRouter
+
+from core.schemas.WaintingList import WaitingListSchema
 
 waiting_list_router = APIRouter(
     prefix="/waiting_list",

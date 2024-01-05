@@ -9,7 +9,7 @@ class SkillStatus(Enum):
     FINISHED: "finished"
 
 
-class Skill(BaseModel):
+class SkillSchema(BaseModel):
     value: str
     category_id: int
     month_id: int

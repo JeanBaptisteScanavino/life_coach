@@ -1,5 +1,6 @@
-from database.database import Base
 from sqlalchemy import Boolean, Column, Integer
+
+from database.database import Base
 
 
 class Month(Base):

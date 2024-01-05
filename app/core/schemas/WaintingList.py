@@ -1,7 +1,7 @@
 from pydantic import BaseModel
 
 
-class WaitingList(BaseModel):
+class WaitingListSchema(BaseModel):
     value: str
     category_id: int
 
