@@ -13,7 +13,4 @@ class SkillSchema(BaseModel):
     value: str
     category_id: int
     month_id: int
-    status: SkillStatus
-
-    class Config:
-        orm_mode = True
+    status: str

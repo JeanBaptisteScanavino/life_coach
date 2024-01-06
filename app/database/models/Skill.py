@@ -8,6 +8,6 @@ class Skill(Base):
 
     id = Column(Integer, primary_key=True, index=True)
     value = Column(String)
-    month_id: Column(Integer)
-    category_id: Column(Integer)
-    active = Column(String, default="TODO")
+    month_id = Column(Integer)
+    category_id = Column(Integer)
+    status = Column(String)
