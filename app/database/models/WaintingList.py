@@ -1,4 +1,4 @@
-from sqlalchemy import Column, Integer, String
+from sqlalchemy import Column, Integer, String, ForeignKey
 
 from database.database import Base
 
@@ -6,6 +6,6 @@ from database.database import Base
 class WaitingList(Base):
     __tablename__ = "waiting_list"
 
-    id = Column(Integer, primary_key=True, index=True)
-    category_id: Column(Integer)
-    value = Column(String)
+    id: int = Column(Integer, primary_key=True, index=True)
+    category_id: int = Column(Integer)
+    value: str = Column(String)

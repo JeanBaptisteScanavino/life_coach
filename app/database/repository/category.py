@@ -1,6 +1,3 @@
-from database.models.Category import Category
-
-
 class CategoryRepository:
     def __init__(self, db, model):
         self.db = db

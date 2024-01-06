@@ -4,6 +4,6 @@ class GetOnemonth:
         self.db = dependencies["db"]
         self.month_model = dependencies["month_model"]
 
-    def get_one_month(self, month_id):
+    def execute(self, month_id):
         month = self.month_repository(self.db, self.month_model).get_one(month_id)
         return month

@@ -21,21 +21,21 @@ dependencies["month_model"] = Month
 @month_router.get("/")
 def get_all_month(db: Session = Depends(get_db)):
     dependencies["db"] = db
-    months = GetAllMonth(dependencies).get_all_month()
+    months = GetAllMonth(dependencies).execute()
     return {"month": months}
 
 
 @month_router.get("/{id}")
 def get_one_month(id: int, db: Session = Depends(get_db)):
     dependencies["db"] = db
-    month = GetOnemonth(dependencies).get_one_month(id)
+    month = GetOnemonth(dependencies).execute(id)
     return {"month": month }
 
 
 @month_router.post("/")
 def create_month(db: Session = Depends(get_db)):
     dependencies["db"] = db
-    month = CreateMonth(dependencies).create_month()
+    month = CreateMonth(dependencies).execute()
     return {"month": month}
 
 
